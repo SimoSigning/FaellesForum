@@ -14,7 +14,12 @@ namespace FaellesForum
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void CreateUserBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CreateUser.aspx");
+        }
+
+        protected void Login_Click(object sender, EventArgs e)
         {
             Response.Redirect("Forum.aspx");
         }

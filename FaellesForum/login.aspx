@@ -15,14 +15,16 @@
             Tast brugernavn og password<br />
             <br />
             Brugernavn
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="BrugernavnBtn" runat="server"></asp:TextBox>
             <br />
             <br />
             Password
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:TextBox ID="PasswordBtn" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Login" />
+            <asp:Button ID="LoginBtn" runat="server" OnClick="Login_Click" Text="Login" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="CreateUserBtn" runat="server" OnClick="CreateUserBtn_Click" Text="Create user"  />
         </div>
     </form>
 </body>

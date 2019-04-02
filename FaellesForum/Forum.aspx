@@ -11,30 +11,30 @@
         <div>
             Fælles Forum<br />
             Navn:<br />
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="NavnBox" runat="server"></asp:TextBox>
             <br />
             Email:<br />
-&nbsp;<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+&nbsp;<asp:TextBox ID="EmailBox" runat="server"></asp:TextBox>
             <br />
             Besked:<br />
-&nbsp;<asp:TextBox ID="TextBox3" runat="server" Height="85px"></asp:TextBox>
+&nbsp;<asp:TextBox ID="BeskedBox" runat="server" Height="85px"></asp:TextBox>
             <br />
             Adresse:<br />
-            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            <asp:TextBox ID="AdresseBox" runat="server"></asp:TextBox>
             <br />
             Mobil:
             <br />
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <asp:TextBox ID="MobilBox" runat="server"></asp:TextBox>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Save" />
-            <asp:Button ID="Button2" runat="server" Text="Reset" />
-            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Delete all messages" />
-            <asp:Button ID="Button4" runat="server" Text="Read all messages" />
+            <asp:Button ID="SaveBtn" runat="server" OnClick="Save_Click" Text="Save" />
+            <asp:Button ID="ResetBtn" runat="server" OnClick="Reset_Click" Text="Reset" />
+            <asp:Button ID="DeleteBtn" runat="server" OnClick="Delete_Click" Text="Delete all messages" />
+            <asp:Button ID="ReadBtn" runat="server" Onclick="Read_Click" Text="Read all messages" />
             <br />
-            <asp:Button ID="Button5" runat="server" Text="Logout" />
+            <asp:Button ID="LogoutBtn" runat="server" OnClick="Logout_Click" Text="Logout"  />
             <br />
             <br />
-            <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+            <asp:ListBox ID="MessageList" runat="server"></asp:ListBox>
         </div>
     </form>
 </body>
