@@ -18,10 +18,10 @@ namespace FaellesForum
 
         protected void Create_Click(object sender, EventArgs e)
         {
-            SqlConnection newconnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Connection"].ConnectionString);
-            string createbruger = CreateUserBtn.Text;
+            SqlConnection newconnection = new SqlConnection(ConfigurationManager.ConnectionStrings["derpection"].ConnectionString);
+            string createbruger = BrugernavnTxt.Text;
             string createpass = PasswordTxt.Text;
-            string sql = "insert into Brugere values('" + createbruger + "', '" + createpass + "')";
+            string sql = "insert into Users values('" + createbruger + "', '" + createpass + "')";
             SqlCommand hmm = new SqlCommand(sql, newconnection);
             newconnection.Open();
             hmm.ExecuteNonQuery();

@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ForumUsers.mdf" />
+    <Content Include="App_Data\ForumUsers_log.ldf">
+      <DependentUpon>ForumUsers.mdf</DependentUpon>
+    </Content>
     <Content Include="CreateUser.aspx" />
     <Content Include="Forum.aspx" />
     <Content Include="login.aspx" />
