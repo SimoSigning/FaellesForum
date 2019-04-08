@@ -15,41 +15,27 @@ namespace FaellesForum
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label1.Text = Session["Giraf"].ToString();
         }
 
         protected void Save_Click(object sender, EventArgs e)
         {
-            /*   StreamWriter writer = new StreamWriter("C:\\Messages.txt", true);
-               writer.WriteLine(BeskedBox.Text);
-               writer.Close();
-               BeskedBox.Text = "";*/
             SqlConnection newconnection = new SqlConnection(ConfigurationManager.ConnectionStrings["derpection"].ConnectionString);
             string Besked = BeskedBox.Text;
-            string Brugernavn = NavnBox.Text;
-            string sql01 = "SELECT Id from Users where UserName = " + "'" + Brugernavn +"'";
-            string sql02 = "INSERT INTO Messages (Besked, BrugerID) VALUES('" + Besked + "')";
+            //her skal jeg indsætte flere felter i messages som kan hentes frem under read_click (gjorde jeg muligvis fra skolen af)
+            string sql01 = "INSERT INTO Messages(BrugerID, Username) SELECT Id, Username FROM Users WHERE Username = 'simonhylleberg';";
+            string sql02 = "UPDATE Messages SET Besked = '"+ Besked +"' WHERE Id IN (SELECT TOP 1 Id FROM Messages ORDER BY Id DESC)";
             SqlCommand hmm01 = new SqlCommand(sql01, newconnection);
             SqlCommand hmm02 = new SqlCommand(sql02, newconnection);
-            SqlParameter user = new SqlParameter();
-            user.ParameterName = "@username";
-            hmm01.Parameters.Add(user);
-
             newconnection.Open();
             hmm01.ExecuteNonQuery();
+            hmm02.ExecuteNonQuery();
             newconnection.Close();
-
-            
-
         }
 
         protected void Reset_Click(object sender, EventArgs e)
         {
-            NavnBox.Text = "";
-            EmailBox.Text = "";
             BeskedBox.Text = "";
-            AdresseBox.Text = "";
-            MobilBox.Text = "";
         }
 
         protected void Delete_Click(object sender, EventArgs e)

@@ -21,7 +21,7 @@ namespace FaellesForum
             SqlConnection newconnection = new SqlConnection(ConfigurationManager.ConnectionStrings["derpection"].ConnectionString);
             string createbruger = BrugernavnTxt.Text;
             string createpass = PasswordTxt.Text;
-            string sql = "insert into Users values('" + createbruger + "', '" + createpass + "')";
+            string sql = "insert into Users (Username, Password) values('" + createbruger + "', '" + createpass + "')";
             SqlCommand hmm = new SqlCommand(sql, newconnection);
             newconnection.Open();
             hmm.ExecuteNonQuery();

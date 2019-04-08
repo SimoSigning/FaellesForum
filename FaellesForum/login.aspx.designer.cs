@@ -31,22 +31,22 @@ namespace FaellesForum {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// BrugernavnBtn control.
+        /// BrugernavnTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BrugernavnBtn;
+        protected global::System.Web.UI.WebControls.TextBox BrugernavnTxt;
         
         /// <summary>
-        /// PasswordBtn control.
+        /// PasswordTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox PasswordBtn;
+        protected global::System.Web.UI.WebControls.TextBox PasswordTxt;
         
         /// <summary>
         /// LoginBtn control.
