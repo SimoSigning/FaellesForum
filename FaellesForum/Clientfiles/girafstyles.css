@@ -5,7 +5,7 @@
 
 #Header {
     background-image: url(../Files/kagegiraf.jpg);
-    height: 90px;
+    height: 12vh;
     color: rgb(45, 22, 0);
     text-shadow: initial;
     opacity: 0.98;
@@ -17,12 +17,12 @@
 }
 
 #Content {
-    height:500px;
+    height:75vh;
     color:black;
 }
 
 #Leftcontent {
-    height: 500px;
+    height: 75vh;
     color: rgb(45, 22, 0);
     background-color: antiquewhite;
     opacity: 0.95;
@@ -31,7 +31,7 @@
 }
 
 #Maincontent {
-    height:500px;
+    height:75vh;
     color:rgb(45, 22, 0);
     background-color: antiquewhite;
     opacity:0.7;
@@ -41,8 +41,8 @@
 
 
 #Footer {
-background-image: url(../Files/kagegiraf.jpg);
-color: black;
-height: 45px;
-opacity: 0.98;
+    background-image: url(../Files/kagegiraf.jpg);
+    color: black;
+    height: 8vh;
+    opacity: 0.98;
 }
