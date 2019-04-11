@@ -40,12 +40,12 @@ namespace FaellesForum {
         protected global::System.Web.UI.WebControls.TextBox PasswordTxt;
         
         /// <summary>
-        /// CreateUserBtn control.
+        /// CreateUserBtn02 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CreateUserBtn;
+        protected global::System.Web.UI.WebControls.Button CreateUserBtn02;
     }
 }

@@ -16,17 +16,17 @@
         Create user ->
          </div>
         <div id="Maincontent">
-        <form id="form1" runat="server">
-            <div>
-                Brugernavn<br />
-                <asp:TextBox ID="BrugernavnTxt" runat="server"></asp:TextBox>
-                <br />
-                Password<br />
-                <asp:TextBox ID="PasswordTxt" runat="server"></asp:TextBox>
-                <br />
-                <asp:Button ID="CreateUserBtn" runat="server" OnClick="Create_Click" Text="Submit" />
-            </div>
-        </form>
+            <form id="form1" runat="server">
+                <div>
+                    Brugernavn<br />
+                    <asp:TextBox ID="BrugernavnTxt" runat="server"></asp:TextBox>
+                    <br />
+                    Password<br />
+                    <asp:TextBox ID="PasswordTxt" runat="server"></asp:TextBox>
+                    <br />
+                    <asp:Button ID="CreateUserBtn02" runat="server" OnClick="Create_Click" Text="Submit" />
+                </div>
+            </form>
         </div>
     </div>
     <div id="Footer">

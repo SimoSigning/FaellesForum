@@ -26,6 +26,7 @@ namespace FaellesForum
             newconnection.Open();
             hmm.ExecuteNonQuery();
             newconnection.Close();
+            Response.Redirect("login.aspx");
         }
     }
 }
